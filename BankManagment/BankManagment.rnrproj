@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>BankManagementSystem</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{386a908d-d17d-4a39-bf47-ad48487dc7d9}</ProjectGuid>
+    <Name>BankManagment</Name>
+    <RootNamespace>BankManagment</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>True</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="ExtendedDataType" />
+    <Folder Include="BaseEnum" />
+    <Folder Include="Tables" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxEdt\BMAccountNum">
+      <SubType>Content</SubType>
+      <Name>BMAccountNum</Name>
+      <Link>ExtendedDataType\BMAccountNum</Link>
+    </Content>
+    <Content Include="AxEdt\BMAccountTypes">
+      <SubType>Content</SubType>
+      <Name>BMAccountTypes</Name>
+      <Link>ExtendedDataType\BMAccountTypes</Link>
+    </Content>
+    <Content Include="AxEdt\BMAddressFK">
+      <SubType>Content</SubType>
+      <Name>BMAddressFK</Name>
+      <Link>ExtendedDataType\BMAddressFK</Link>
+    </Content>
+    <Content Include="AxEdt\BMAmount">
+      <SubType>Content</SubType>
+      <Name>BMAmount</Name>
+      <Link>ExtendedDataType\BMAmount</Link>
+    </Content>
+    <Content Include="AxEdt\BMCardNum">
+      <SubType>Content</SubType>
+      <Name>BMCardNum</Name>
+      <Link>ExtendedDataType\BMCardNum</Link>
+    </Content>
+    <Content Include="AxEdt\BMCity">
+      <SubType>Content</SubType>
+      <Name>BMCity</Name>
+      <Link>ExtendedDataType\BMCity</Link>
+    </Content>
+    <Content Include="AxEdt\BMDate">
+      <SubType>Content</SubType>
+      <Name>BMDate</Name>
+      <Link>ExtendedDataType\BMDate</Link>
+    </Content>
+    <Content Include="AxEdt\BMDateOfTransaction">
+      <SubType>Content</SubType>
+      <Name>BMDateOfTransaction</Name>
+      <Link>ExtendedDataType\BMDateOfTransaction</Link>
+    </Content>
+    <Content Include="AxEdt\BMDoac">
+      <SubType>Content</SubType>
+      <Name>BMDoac</Name>
+      <Link>ExtendedDataType\BMDoac</Link>
+    </Content>
+    <Content Include="AxEdt\BMDob">
+      <SubType>Content</SubType>
+      <Name>BMDob</Name>
+      <Link>ExtendedDataType\BMDob</Link>
+    </Content>
+    <Content Include="AxEdt\BMGenders">
+      <SubType>Content</SubType>
+      <Name>BMGenders</Name>
+      <Link>ExtendedDataType\BMGenders</Link>
+    </Content>
+    <Content Include="AxEdt\BMITNum">
+      <SubType>Content</SubType>
+      <Name>BMITNum</Name>
+      <Link>ExtendedDataType\BMITNum</Link>
+    </Content>
+    <Content Include="AxEdt\BMMobile">
+      <SubType>Content</SubType>
+      <Name>BMMobile</Name>
+      <Link>ExtendedDataType\BMMobile</Link>
+    </Content>
+    <Content Include="AxEdt\BMName">
+      <SubType>Content</SubType>
+      <Name>BMName</Name>
+      <Link>ExtendedDataType\BMName</Link>
+    </Content>
+    <Content Include="AxEdt\BMZipCode">
+      <SubType>Content</SubType>
+      <Name>BMZipCode</Name>
+      <Link>ExtendedDataType\BMZipCode</Link>
+    </Content>
+    <Content Include="AxEdt\CardTypes">
+      <SubType>Content</SubType>
+      <Name>CardTypes</Name>
+      <Link>ExtendedDataType\CardTypes</Link>
+    </Content>
+    <Content Include="AxEdt\State">
+      <SubType>Content</SubType>
+      <Name>State</Name>
+      <Link>ExtendedDataType\State</Link>
+    </Content>
+    <Content Include="AxEdt\Street">
+      <SubType>Content</SubType>
+      <Name>Street</Name>
+      <Link>ExtendedDataType\Street</Link>
+    </Content>
+    <Content Include="AxEnum\BMAccountType">
+      <SubType>Content</SubType>
+      <Name>BMAccountType</Name>
+      <Link>BaseEnum\BMAccountType</Link>
+    </Content>
+    <Content Include="AxEnum\BMCardType">
+      <SubType>Content</SubType>
+      <Name>BMCardType</Name>
+      <Link>BaseEnum\BMCardType</Link>
+    </Content>
+    <Content Include="AxEnum\BMGender">
+      <SubType>Content</SubType>
+      <Name>BMGender</Name>
+      <Link>BaseEnum\BMGender</Link>
+    </Content>
+    <Content Include="AxTable\BMAddress">
+      <SubType>Content</SubType>
+      <Name>BMAddress</Name>
+      <Link>Tables\BMAddress</Link>
+    </Content>
+    <Content Include="AxTable\BMAllAccount">
+      <SubType>Content</SubType>
+      <Name>BMAllAccount</Name>
+      <Link>Tables\BMAllAccount</Link>
+    </Content>
+    <Content Include="AxTable\BMCardAccount">
+      <SubType>Content</SubType>
+      <Name>BMCardAccount</Name>
+      <Link>Tables\BMCardAccount</Link>
+    </Content>
+    <Content Include="AxTable\BMCurrentAccount">
+      <SubType>Content</SubType>
+      <Name>BMCurrentAccount</Name>
+      <Link>Tables\BMCurrentAccount</Link>
+    </Content>
+    <Content Include="AxTable\BMFixedAccount">
+      <SubType>Content</SubType>
+      <Name>BMFixedAccount</Name>
+      <Link>Tables\BMFixedAccount</Link>
+    </Content>
+    <Content Include="AxTable\BMSavingsAccount">
+      <SubType>Content</SubType>
+      <Name>BMSavingsAccount</Name>
+      <Link>Tables\BMSavingsAccount</Link>
+    </Content>
+    <Content Include="AxTable\BMTransaction">
+      <SubType>Content</SubType>
+      <Name>BMTransaction</Name>
+      <Link>Tables\BMTransaction</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>
