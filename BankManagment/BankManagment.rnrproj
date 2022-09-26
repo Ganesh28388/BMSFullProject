@@ -14,6 +14,8 @@
     <ProjectGuid>{386a908d-d17d-4a39-bf47-ad48487dc7d9}</ProjectGuid>
     <Name>BankManagment</Name>
     <RootNamespace>BankManagment</RootNamespace>
+    <StartupObject>BMTransactionFormPart</StartupObject>
+    <StartupType>Form</StartupType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Configuration>Debug</Configuration>
@@ -33,9 +35,22 @@
   <ItemGroup>
     <Folder Include="ExtendedDataType" />
     <Folder Include="BaseEnum" />
+    <Folder Include="DataEntities" />
+    <Folder Include="FormPatterns" />
+    <Folder Include="Label File" />
     <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AccountNumber.en-150.label.txt">
+      <SubType>Content</SubType>
+      <Name>AccountNumber.en-150.label.txt</Name>
+      <DependentUpon>AxLabelFile\AccountNumber_en-150</DependentUpon>
+    </Content>
+    <Content Include="AccountNumber.en-US.label.txt">
+      <SubType>Content</SubType>
+      <Name>AccountNumber.en-US.label.txt</Name>
+      <DependentUpon>AxLabelFile\AccountNumber_en-US</DependentUpon>
+    </Content>
     <Content Include="AxEdt\BMAccountNum">
       <SubType>Content</SubType>
       <Name>BMAccountNum</Name>
@@ -141,6 +156,81 @@
       <Name>BMGender</Name>
       <Link>BaseEnum\BMGender</Link>
     </Content>
+    <Content Include="AxForm\BMDialogFastTabs">
+      <SubType>Content</SubType>
+      <Name>BMDialogFastTabs</Name>
+      <Link>FormPatterns\BMDialogFastTabs</Link>
+    </Content>
+    <Content Include="AxForm\BMSavingsDetails">
+      <SubType>Content</SubType>
+      <Name>BMSavingsDetails</Name>
+      <Link>FormPatterns\BMSavingsDetails</Link>
+    </Content>
+    <Content Include="AxForm\BMSavingsHubPart">
+      <SubType>Content</SubType>
+      <Name>BMSavingsHubPart</Name>
+      <Link>FormPatterns\BMSavingsHubPart</Link>
+    </Content>
+    <Content Include="AxForm\BMSavingsSectionList">
+      <SubType>Content</SubType>
+      <Name>BMSavingsSectionList</Name>
+      <Link>FormPatterns\BMSavingsSectionList</Link>
+    </Content>
+    <Content Include="AxForm\BMSavingsSimpleDetail">
+      <SubType>Content</SubType>
+      <Name>BMSavingsSimpleDetail</Name>
+      <Link>FormPatterns\BMSavingsSimpleDetail</Link>
+    </Content>
+    <Content Include="AxForm\BMTaskDouble">
+      <SubType>Content</SubType>
+      <Name>BMTaskDouble</Name>
+      <Link>FormPatterns\BMTaskDouble</Link>
+    </Content>
+    <Content Include="AxForm\BMTransactionFormPart">
+      <SubType>Content</SubType>
+      <Name>BMTransactionFormPart</Name>
+      <Link>FormPatterns\BMTransactionFormPart</Link>
+    </Content>
+    <Content Include="AxForm\DetailsMaster">
+      <SubType>Content</SubType>
+      <Name>DetailsMaster</Name>
+      <Link>FormPatterns\DetailsMaster</Link>
+    </Content>
+    <Content Include="AxLabelFile\AccountNumber_en-150">
+      <SubType>Content</SubType>
+      <Name>AccountNumber_en-150</Name>
+      <Link>Label File\AccountNumber_en-150</Link>
+    </Content>
+    <Content Include="AxLabelFile\AccountNumber_en-US">
+      <SubType>Content</SubType>
+      <Name>AccountNumber_en-US</Name>
+      <Link>Label File\AccountNumber_en-US</Link>
+    </Content>
+    <Content Include="AxLabelFile\BMAmount_en-US">
+      <SubType>Content</SubType>
+      <Name>BMAmount_en-US</Name>
+      <Link>Label File\BMAmount_en-US</Link>
+    </Content>
+    <Content Include="AxLabelFile\BMCity_en-US">
+      <SubType>Content</SubType>
+      <Name>BMCity_en-US</Name>
+      <Link>Label File\BMCity_en-US</Link>
+    </Content>
+    <Content Include="AxLabelFile\CardNumber_en-US">
+      <SubType>Content</SubType>
+      <Name>CardNumber_en-US</Name>
+      <Link>Label File\CardNumber_en-US</Link>
+    </Content>
+    <Content Include="AxLabelFile\DateOfTransaction_ar">
+      <SubType>Content</SubType>
+      <Name>DateOfTransaction_ar</Name>
+      <Link>Label File\DateOfTransaction_ar</Link>
+    </Content>
+    <Content Include="AxLabelFile\DateOfTransaction_en-US">
+      <SubType>Content</SubType>
+      <Name>DateOfTransaction_en-US</Name>
+      <Link>Label File\DateOfTransaction_en-US</Link>
+    </Content>
     <Content Include="AxTable\BMAddress">
       <SubType>Content</SubType>
       <Name>BMAddress</Name>
@@ -175,6 +265,31 @@
       <SubType>Content</SubType>
       <Name>BMTransaction</Name>
       <Link>Tables\BMTransaction</Link>
+    </Content>
+    <Content Include="BMAmount.en-US.label.txt">
+      <SubType>Content</SubType>
+      <Name>BMAmount.en-US.label.txt</Name>
+      <DependentUpon>AxLabelFile\BMAmount_en-US</DependentUpon>
+    </Content>
+    <Content Include="BMCity.en-US.label.txt">
+      <SubType>Content</SubType>
+      <Name>BMCity.en-US.label.txt</Name>
+      <DependentUpon>AxLabelFile\BMCity_en-US</DependentUpon>
+    </Content>
+    <Content Include="CardNumber.en-US.label.txt">
+      <SubType>Content</SubType>
+      <Name>CardNumber.en-US.label.txt</Name>
+      <DependentUpon>AxLabelFile\CardNumber_en-US</DependentUpon>
+    </Content>
+    <Content Include="DateOfTransaction.ar.label.txt">
+      <SubType>Content</SubType>
+      <Name>DateOfTransaction.ar.label.txt</Name>
+      <DependentUpon>AxLabelFile\DateOfTransaction_ar</DependentUpon>
+    </Content>
+    <Content Include="DateOfTransaction.en-US.label.txt">
+      <SubType>Content</SubType>
+      <Name>DateOfTransaction.en-US.label.txt</Name>
+      <DependentUpon>AxLabelFile\DateOfTransaction_en-US</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
