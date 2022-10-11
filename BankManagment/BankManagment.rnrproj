@@ -14,7 +14,7 @@
     <ProjectGuid>{386a908d-d17d-4a39-bf47-ad48487dc7d9}</ProjectGuid>
     <Name>BankManagment</Name>
     <RootNamespace>BankManagment</RootNamespace>
-    <StartupObject>BMTransactionFormPart</StartupObject>
+    <StartupObject>BMSavingsHubPart</StartupObject>
     <StartupType>Form</StartupType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
@@ -41,16 +41,6 @@
     <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AccountNumber.en-150.label.txt">
-      <SubType>Content</SubType>
-      <Name>AccountNumber.en-150.label.txt</Name>
-      <DependentUpon>AxLabelFile\AccountNumber_en-150</DependentUpon>
-    </Content>
-    <Content Include="AccountNumber.en-US.label.txt">
-      <SubType>Content</SubType>
-      <Name>AccountNumber.en-US.label.txt</Name>
-      <DependentUpon>AxLabelFile\AccountNumber_en-US</DependentUpon>
-    </Content>
     <Content Include="AxEdt\BMAccountNum">
       <SubType>Content</SubType>
       <Name>BMAccountNum</Name>
@@ -196,40 +186,25 @@
       <Name>DetailsMaster</Name>
       <Link>FormPatterns\DetailsMaster</Link>
     </Content>
-    <Content Include="AxLabelFile\AccountNumber_en-150">
+    <Content Include="AxLabelFile\BankManagementSystem_af">
       <SubType>Content</SubType>
-      <Name>AccountNumber_en-150</Name>
-      <Link>Label File\AccountNumber_en-150</Link>
+      <Name>BankManagementSystem_af</Name>
+      <Link>Label File\BankManagementSystem_af</Link>
     </Content>
-    <Content Include="AxLabelFile\AccountNumber_en-US">
+    <Content Include="AxLabelFile\BankManagementSystem_am">
       <SubType>Content</SubType>
-      <Name>AccountNumber_en-US</Name>
-      <Link>Label File\AccountNumber_en-US</Link>
+      <Name>BankManagementSystem_am</Name>
+      <Link>Label File\BankManagementSystem_am</Link>
     </Content>
-    <Content Include="AxLabelFile\BMAmount_en-US">
+    <Content Include="AxLabelFile\BankManagementSystem_ar-BH">
       <SubType>Content</SubType>
-      <Name>BMAmount_en-US</Name>
-      <Link>Label File\BMAmount_en-US</Link>
+      <Name>BankManagementSystem_ar-BH</Name>
+      <Link>Label File\BankManagementSystem_ar-BH</Link>
     </Content>
-    <Content Include="AxLabelFile\BMCity_en-US">
+    <Content Include="AxLabelFile\BankManagementSystem_en-US">
       <SubType>Content</SubType>
-      <Name>BMCity_en-US</Name>
-      <Link>Label File\BMCity_en-US</Link>
-    </Content>
-    <Content Include="AxLabelFile\CardNumber_en-US">
-      <SubType>Content</SubType>
-      <Name>CardNumber_en-US</Name>
-      <Link>Label File\CardNumber_en-US</Link>
-    </Content>
-    <Content Include="AxLabelFile\DateOfTransaction_ar">
-      <SubType>Content</SubType>
-      <Name>DateOfTransaction_ar</Name>
-      <Link>Label File\DateOfTransaction_ar</Link>
-    </Content>
-    <Content Include="AxLabelFile\DateOfTransaction_en-US">
-      <SubType>Content</SubType>
-      <Name>DateOfTransaction_en-US</Name>
-      <Link>Label File\DateOfTransaction_en-US</Link>
+      <Name>BankManagementSystem_en-US</Name>
+      <Link>Label File\BankManagementSystem_en-US</Link>
     </Content>
     <Content Include="AxTable\BMAddress">
       <SubType>Content</SubType>
@@ -266,30 +241,25 @@
       <Name>BMTransaction</Name>
       <Link>Tables\BMTransaction</Link>
     </Content>
-    <Content Include="BMAmount.en-US.label.txt">
+    <Content Include="BankManagementSystem.af.label.txt">
       <SubType>Content</SubType>
-      <Name>BMAmount.en-US.label.txt</Name>
-      <DependentUpon>AxLabelFile\BMAmount_en-US</DependentUpon>
+      <Name>BankManagementSystem.af.label.txt</Name>
+      <DependentUpon>AxLabelFile\BankManagementSystem_af</DependentUpon>
     </Content>
-    <Content Include="BMCity.en-US.label.txt">
+    <Content Include="BankManagementSystem.am.label.txt">
       <SubType>Content</SubType>
-      <Name>BMCity.en-US.label.txt</Name>
-      <DependentUpon>AxLabelFile\BMCity_en-US</DependentUpon>
+      <Name>BankManagementSystem.am.label.txt</Name>
+      <DependentUpon>AxLabelFile\BankManagementSystem_am</DependentUpon>
     </Content>
-    <Content Include="CardNumber.en-US.label.txt">
+    <Content Include="BankManagementSystem.ar-BH.label.txt">
       <SubType>Content</SubType>
-      <Name>CardNumber.en-US.label.txt</Name>
-      <DependentUpon>AxLabelFile\CardNumber_en-US</DependentUpon>
+      <Name>BankManagementSystem.ar-BH.label.txt</Name>
+      <DependentUpon>AxLabelFile\BankManagementSystem_ar-BH</DependentUpon>
     </Content>
-    <Content Include="DateOfTransaction.ar.label.txt">
+    <Content Include="BankManagementSystem.en-US.label.txt">
       <SubType>Content</SubType>
-      <Name>DateOfTransaction.ar.label.txt</Name>
-      <DependentUpon>AxLabelFile\DateOfTransaction_ar</DependentUpon>
-    </Content>
-    <Content Include="DateOfTransaction.en-US.label.txt">
-      <SubType>Content</SubType>
-      <Name>DateOfTransaction.en-US.label.txt</Name>
-      <DependentUpon>AxLabelFile\DateOfTransaction_en-US</DependentUpon>
+      <Name>BankManagementSystem.en-US.label.txt</Name>
+      <DependentUpon>AxLabelFile\BankManagementSystem_en-US</DependentUpon>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
