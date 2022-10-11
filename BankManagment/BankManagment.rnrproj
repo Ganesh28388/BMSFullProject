@@ -14,8 +14,10 @@
     <ProjectGuid>{386a908d-d17d-4a39-bf47-ad48487dc7d9}</ProjectGuid>
     <Name>BankManagment</Name>
     <RootNamespace>BankManagment</RootNamespace>
-    <StartupObject>BMSavingsHubPart</StartupObject>
-    <StartupType>Form</StartupType>
+    <StartupObject>
+    </StartupObject>
+    <StartupType>
+    </StartupType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Configuration>Debug</Configuration>
@@ -33,14 +35,20 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="Classes\" />
     <Folder Include="ExtendedDataType" />
     <Folder Include="BaseEnum" />
-    <Folder Include="DataEntities" />
     <Folder Include="FormPatterns" />
     <Folder Include="Label File" />
+    <Folder Include="Simple Queries\" />
     <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AxClass\TstQueries">
+      <SubType>Content</SubType>
+      <Name>TstQueries</Name>
+      <Link>Classes\TstQueries</Link>
+    </Content>
     <Content Include="AxEdt\BMAccountNum">
       <SubType>Content</SubType>
       <Name>BMAccountNum</Name>
@@ -205,6 +213,11 @@
       <SubType>Content</SubType>
       <Name>BankManagementSystem_en-US</Name>
       <Link>Label File\BankManagementSystem_en-US</Link>
+    </Content>
+    <Content Include="AxQuery\BMSavings">
+      <SubType>Content</SubType>
+      <Name>BMSavings</Name>
+      <Link>Simple Queries\BMSavings</Link>
     </Content>
     <Content Include="AxTable\BMAddress">
       <SubType>Content</SubType>
