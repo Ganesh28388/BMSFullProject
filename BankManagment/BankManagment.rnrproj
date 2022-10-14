@@ -14,10 +14,8 @@
     <ProjectGuid>{386a908d-d17d-4a39-bf47-ad48487dc7d9}</ProjectGuid>
     <Name>BankManagment</Name>
     <RootNamespace>BankManagment</RootNamespace>
-    <StartupObject>
-    </StartupObject>
-    <StartupType>
-    </StartupType>
+    <StartupObject>SysOpMIDemo</StartupObject>
+    <StartupType>MenuItemAction</StartupType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Configuration>Debug</Configuration>
@@ -35,15 +33,57 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="Action Menu Items\" />
     <Folder Include="Classes\" />
+    <Folder Include="Display Menu Items\" />
+    <Folder Include="EDT Enums\" />
     <Folder Include="ExtendedDataType" />
-    <Folder Include="BaseEnum" />
+    <Folder Include="BaseEnums" />
     <Folder Include="FormPatterns" />
+    <Folder Include="Forms\" />
     <Folder Include="Label File" />
     <Folder Include="Simple Queries\" />
     <Folder Include="Tables" />
+    <Folder Include="Workflow Approvals\" />
+    <Folder Include="Workflow Categories\" />
+    <Folder Include="Workflow Types\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AxClass\BMEmpExpWorkflowApprovalEventHandler">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWorkflowApprovalEventHandler</Name>
+      <Link>Classes\BMEmpExpWorkflowApprovalEventHandler</Link>
+    </Content>
+    <Content Include="AxClass\BMEmpExpWorkflowApprovalResubmitActionMgr">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWorkflowApprovalResubmitActionMgr</Name>
+      <Link>Classes\BMEmpExpWorkflowApprovalResubmitActionMgr</Link>
+    </Content>
+    <Content Include="AxClass\BMEmpExpWorkflowTypeDocument">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWorkflowTypeDocument</Name>
+      <Link>Classes\BMEmpExpWorkflowTypeDocument</Link>
+    </Content>
+    <Content Include="AxClass\BMEmpExpWorkflowTypeEventHandler">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWorkflowTypeEventHandler</Name>
+      <Link>Classes\BMEmpExpWorkflowTypeEventHandler</Link>
+    </Content>
+    <Content Include="AxClass\BMEmpExpWorkflowTypeSubmitManager">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWorkflowTypeSubmitManager</Name>
+      <Link>Classes\BMEmpExpWorkflowTypeSubmitManager</Link>
+    </Content>
+    <Content Include="AxClass\SysOpControllerClass">
+      <SubType>Content</SubType>
+      <Name>SysOpControllerClass</Name>
+      <Link>Classes\SysOpControllerClass</Link>
+    </Content>
+    <Content Include="AxClass\SysOpServiceClass">
+      <SubType>Content</SubType>
+      <Name>SysOpServiceClass</Name>
+      <Link>Classes\SysOpServiceClass</Link>
+    </Content>
     <Content Include="AxClass\TstQueries">
       <SubType>Content</SubType>
       <Name>TstQueries</Name>
@@ -129,6 +169,16 @@
       <Name>CardTypes</Name>
       <Link>ExtendedDataType\CardTypes</Link>
     </Content>
+    <Content Include="AxEdt\ExpenseStatus">
+      <SubType>Content</SubType>
+      <Name>ExpenseStatus</Name>
+      <Link>EDT Enums\ExpenseStatus</Link>
+    </Content>
+    <Content Include="AxEdt\ExpenseType">
+      <SubType>Content</SubType>
+      <Name>ExpenseType</Name>
+      <Link>EDT Enums\ExpenseType</Link>
+    </Content>
     <Content Include="AxEdt\State">
       <SubType>Content</SubType>
       <Name>State</Name>
@@ -142,22 +192,37 @@
     <Content Include="AxEnum\BMAccountType">
       <SubType>Content</SubType>
       <Name>BMAccountType</Name>
-      <Link>BaseEnum\BMAccountType</Link>
+      <Link>BaseEnums\BMAccountType</Link>
     </Content>
     <Content Include="AxEnum\BMCardType">
       <SubType>Content</SubType>
       <Name>BMCardType</Name>
-      <Link>BaseEnum\BMCardType</Link>
+      <Link>BaseEnums\BMCardType</Link>
+    </Content>
+    <Content Include="AxEnum\BMExpenseStatus">
+      <SubType>Content</SubType>
+      <Name>BMExpenseStatus</Name>
+      <Link>BaseEnums\BMExpenseStatus</Link>
+    </Content>
+    <Content Include="AxEnum\BMExpenseType">
+      <SubType>Content</SubType>
+      <Name>BMExpenseType</Name>
+      <Link>BaseEnums\BMExpenseType</Link>
     </Content>
     <Content Include="AxEnum\BMGender">
       <SubType>Content</SubType>
       <Name>BMGender</Name>
-      <Link>BaseEnum\BMGender</Link>
+      <Link>BaseEnums\BMGender</Link>
     </Content>
     <Content Include="AxForm\BMDialogFastTabs">
       <SubType>Content</SubType>
       <Name>BMDialogFastTabs</Name>
       <Link>FormPatterns\BMDialogFastTabs</Link>
+    </Content>
+    <Content Include="AxForm\BMEmployeeExpense">
+      <SubType>Content</SubType>
+      <Name>BMEmployeeExpense</Name>
+      <Link>Forms\BMEmployeeExpense</Link>
     </Content>
     <Content Include="AxForm\BMSavingsDetails">
       <SubType>Content</SubType>
@@ -173,11 +238,6 @@
       <SubType>Content</SubType>
       <Name>BMSavingsSectionList</Name>
       <Link>FormPatterns\BMSavingsSectionList</Link>
-    </Content>
-    <Content Include="AxForm\BMSavingsSimpleDetail">
-      <SubType>Content</SubType>
-      <Name>BMSavingsSimpleDetail</Name>
-      <Link>FormPatterns\BMSavingsSimpleDetail</Link>
     </Content>
     <Content Include="AxForm\BMTaskDouble">
       <SubType>Content</SubType>
@@ -214,6 +274,56 @@
       <Name>BankManagementSystem_en-US</Name>
       <Link>Label File\BankManagementSystem_en-US</Link>
     </Content>
+    <Content Include="AxMenuItemAction\BMEmpExpWorkflowApprovalApprove">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWorkflowApprovalApprove</Name>
+      <Link>Action Menu Items\BMEmpExpWorkflowApprovalApprove</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\BMEmpExpWorkflowApprovalDelegateMenuItem">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWorkflowApprovalDelegateMenuItem</Name>
+      <Link>Action Menu Items\BMEmpExpWorkflowApprovalDelegateMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\BMEmpExpWorkflowApprovalReject">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWorkflowApprovalReject</Name>
+      <Link>Action Menu Items\BMEmpExpWorkflowApprovalReject</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\BMEmpExpWorkflowApprovalRequestChange">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWorkflowApprovalRequestChange</Name>
+      <Link>Action Menu Items\BMEmpExpWorkflowApprovalRequestChange</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\BMEmpExpWorkflowApprovalResubmitMenuItem">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWorkflowApprovalResubmitMenuItem</Name>
+      <Link>Action Menu Items\BMEmpExpWorkflowApprovalResubmitMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\BMEmpExpWorkflowTypeCancelMenuItem">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWorkflowTypeCancelMenuItem</Name>
+      <Link>Action Menu Items\BMEmpExpWorkflowTypeCancelMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\BMEmpExpWorkflowTypeSubmitMenuItem">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWorkflowTypeSubmitMenuItem</Name>
+      <Link>Action Menu Items\BMEmpExpWorkflowTypeSubmitMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SysOpMIDemo">
+      <SubType>Content</SubType>
+      <Name>SysOpMIDemo</Name>
+      <Link>Action Menu Items\SysOpMIDemo</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\BMEmployeeExpense">
+      <SubType>Content</SubType>
+      <Name>BMEmployeeExpense</Name>
+      <Link>Display Menu Items\BMEmployeeExpense</Link>
+    </Content>
+    <Content Include="AxQuery\BMEmployeeExpenseQry">
+      <SubType>Content</SubType>
+      <Name>BMEmployeeExpenseQry</Name>
+      <Link>Simple Queries\BMEmployeeExpenseQry</Link>
+    </Content>
     <Content Include="AxQuery\BMSavings">
       <SubType>Content</SubType>
       <Name>BMSavings</Name>
@@ -239,6 +349,11 @@
       <Name>BMCurrentAccount</Name>
       <Link>Tables\BMCurrentAccount</Link>
     </Content>
+    <Content Include="AxTable\BMEmployeeExpense">
+      <SubType>Content</SubType>
+      <Name>BMEmployeeExpense</Name>
+      <Link>Tables\BMEmployeeExpense</Link>
+    </Content>
     <Content Include="AxTable\BMFixedAccount">
       <SubType>Content</SubType>
       <Name>BMFixedAccount</Name>
@@ -253,6 +368,21 @@
       <SubType>Content</SubType>
       <Name>BMTransaction</Name>
       <Link>Tables\BMTransaction</Link>
+    </Content>
+    <Content Include="AxWorkflowApproval\BMEmpExpWorkflowApproval">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWorkflowApproval</Name>
+      <Link>Workflow Approvals\BMEmpExpWorkflowApproval</Link>
+    </Content>
+    <Content Include="AxWorkflowCategory\BMEmpExpWFC">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWFC</Name>
+      <Link>Workflow Categories\BMEmpExpWFC</Link>
+    </Content>
+    <Content Include="AxWorkflowTemplate\BMEmpExpWorkflowType">
+      <SubType>Content</SubType>
+      <Name>BMEmpExpWorkflowType</Name>
+      <Link>Workflow Types\BMEmpExpWorkflowType</Link>
     </Content>
     <Content Include="BankManagementSystem.af.label.txt">
       <SubType>Content</SubType>
