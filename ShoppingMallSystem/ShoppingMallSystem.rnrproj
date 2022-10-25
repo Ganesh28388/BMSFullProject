@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>AggregateDEModel</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{b45f98d4-d226-45b2-9e8f-197fe5ba592c}</ProjectGuid>
+    <Name>ShoppingMallSystem</Name>
+    <RootNamespace>ShoppingMallSystem</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>True</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="ExtendedDataType" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxEdt\OrderDate">
+      <SubType>Content</SubType>
+      <Name>OrderDate</Name>
+      <Link>ExtendedDataType\OrderDate</Link>
+    </Content>
+    <Content Include="AxEdt\Quantity">
+      <SubType>Content</SubType>
+      <Name>Quantity</Name>
+      <Link>ExtendedDataType\Quantity</Link>
+    </Content>
+    <Content Include="AxEdt\ShippedDate">
+      <SubType>Content</SubType>
+      <Name>ShippedDate</Name>
+      <Link>ExtendedDataType\ShippedDate</Link>
+    </Content>
+    <Content Include="AxEdt\SMCity">
+      <SubType>Content</SubType>
+      <Name>SMCity</Name>
+      <Link>ExtendedDataType\SMCity</Link>
+    </Content>
+    <Content Include="AxEdt\SMCustomerId">
+      <SubType>Content</SubType>
+      <Name>SMCustomerId</Name>
+      <Link>ExtendedDataType\SMCustomerId</Link>
+    </Content>
+    <Content Include="AxEdt\SMCustomerName">
+      <SubType>Content</SubType>
+      <Name>SMCustomerName</Name>
+      <Link>ExtendedDataType\SMCustomerName</Link>
+    </Content>
+    <Content Include="AxEdt\SMDescription">
+      <SubType>Content</SubType>
+      <Name>SMDescription</Name>
+      <Link>ExtendedDataType\SMDescription</Link>
+    </Content>
+    <Content Include="AxEdt\SMOrderID">
+      <SubType>Content</SubType>
+      <Name>SMOrderID</Name>
+      <Link>ExtendedDataType\SMOrderID</Link>
+    </Content>
+    <Content Include="AxEdt\SMShipVia">
+      <SubType>Content</SubType>
+      <Name>SMShipVia</Name>
+      <Link>ExtendedDataType\SMShipVia</Link>
+    </Content>
+    <Content Include="AxEdt\SMUnitPrice">
+      <SubType>Content</SubType>
+      <Name>SMUnitPrice</Name>
+      <Link>ExtendedDataType\SMUnitPrice</Link>
+    </Content>
+    <Content Include="AxEdt\State">
+      <SubType>Content</SubType>
+      <Name>State</Name>
+      <Link>ExtendedDataType\State</Link>
+    </Content>
+    <Content Include="AxEdt\Street">
+      <SubType>Content</SubType>
+      <Name>Street</Name>
+      <Link>ExtendedDataType\Street</Link>
+    </Content>
+    <Content Include="AxEnum\Shipvia">
+      <SubType>Content</SubType>
+      <Name>Shipvia</Name>
+      <Link>ExtendedDataType\Shipvia</Link>
+    </Content>
+    <Content Include="AxTable\OrderDetails">
+      <SubType>Content</SubType>
+      <Name>OrderDetails</Name>
+      <Link>Tables\OrderDetails</Link>
+    </Content>
+    <Content Include="AxTable\Product">
+      <SubType>Content</SubType>
+      <Name>Product</Name>
+      <Link>Tables\Product</Link>
+    </Content>
+    <Content Include="AxTable\SMCategory">
+      <SubType>Content</SubType>
+      <Name>SMCategory</Name>
+      <Link>Tables\SMCategory</Link>
+    </Content>
+    <Content Include="AxTable\SMCustomer">
+      <SubType>Content</SubType>
+      <Name>SMCustomer</Name>
+      <Link>Tables\SMCustomer</Link>
+    </Content>
+    <Content Include="AxTable\SMOrder">
+      <SubType>Content</SubType>
+      <Name>SMOrder</Name>
+      <Link>Tables\SMOrder</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

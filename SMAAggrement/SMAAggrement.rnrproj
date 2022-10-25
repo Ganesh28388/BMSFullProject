@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>AggregateDEModel</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{712163f9-ae9d-4d17-addd-94382b56d4cf}</ProjectGuid>
+    <Name>SMAAggrement</Name>
+    <RootNamespace>SMAAggrement</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>True</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Action Menu Items\" />
+    <Folder Include="Base Enums\" />
+    <Folder Include="Classes\" />
+    <Folder Include="Display Menu Items\" />
+    <Folder Include="EDT Enums\" />
+    <Folder Include="Form Extensions\" />
+    <Folder Include="Menu Extensions\" />
+    <Folder Include="Simple Queries\" />
+    <Folder Include="Table Extensions\" />
+    <Folder Include="Workflow Approvals\" />
+    <Folder Include="Workflow Categories\" />
+    <Folder Include="Workflow Types\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\SMAAggWorkflowApprovalEventHandler">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowApprovalEventHandler</Name>
+      <Link>Classes\SMAAggWorkflowApprovalEventHandler</Link>
+    </Content>
+    <Content Include="AxClass\SMAAggWorkflowApprovalResubmitActionMgr">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowApprovalResubmitActionMgr</Name>
+      <Link>Classes\SMAAggWorkflowApprovalResubmitActionMgr</Link>
+    </Content>
+    <Content Include="AxClass\SMAAggWorkflowTypeDocument">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowTypeDocument</Name>
+      <Link>Classes\SMAAggWorkflowTypeDocument</Link>
+    </Content>
+    <Content Include="AxClass\SMAAggWorkflowTypeEventHandler">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowTypeEventHandler</Name>
+      <Link>Classes\SMAAggWorkflowTypeEventHandler</Link>
+    </Content>
+    <Content Include="AxClass\SMAAggWorkflowTypeSubmitManager">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowTypeSubmitManager</Name>
+      <Link>Classes\SMAAggWorkflowTypeSubmitManager</Link>
+    </Content>
+    <Content Include="AxClass\SMAAgreement_Extension">
+      <SubType>Content</SubType>
+      <Name>SMAAgreement_Extension</Name>
+      <Link>Classes\SMAAgreement_Extension</Link>
+    </Content>
+    <Content Include="AxEdt\SMAAggStatus">
+      <SubType>Content</SubType>
+      <Name>SMAAggStatus</Name>
+      <Link>EDT Enums\SMAAggStatus</Link>
+    </Content>
+    <Content Include="AxEnum\SMAStatus">
+      <SubType>Content</SubType>
+      <Name>SMAStatus</Name>
+      <Link>Base Enums\SMAStatus</Link>
+    </Content>
+    <Content Include="AxFormExtension\SMAAgreementTable.AggregateDEModel">
+      <SubType>Content</SubType>
+      <Name>SMAAgreementTable.AggregateDEModel</Name>
+      <Link>Form Extensions\SMAAgreementTable.AggregateDEModel</Link>
+    </Content>
+    <Content Include="AxMenuExtension\ServiceManagement.AggregateDEModel">
+      <SubType>Content</SubType>
+      <Name>ServiceManagement.AggregateDEModel</Name>
+      <Link>Menu Extensions\ServiceManagement.AggregateDEModel</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SMAAggWorkflowApprovalApprove">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowApprovalApprove</Name>
+      <Link>Action Menu Items\SMAAggWorkflowApprovalApprove</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SMAAggWorkflowApprovalDelegateMenuItem">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowApprovalDelegateMenuItem</Name>
+      <Link>Action Menu Items\SMAAggWorkflowApprovalDelegateMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SMAAggWorkflowApprovalReject">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowApprovalReject</Name>
+      <Link>Action Menu Items\SMAAggWorkflowApprovalReject</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SMAAggWorkflowApprovalRequestChange">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowApprovalRequestChange</Name>
+      <Link>Action Menu Items\SMAAggWorkflowApprovalRequestChange</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SMAAggWorkflowApprovalResubmitMenuItem">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowApprovalResubmitMenuItem</Name>
+      <Link>Action Menu Items\SMAAggWorkflowApprovalResubmitMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SMAAggWorkflowTypeCancelMenuItem">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowTypeCancelMenuItem</Name>
+      <Link>Action Menu Items\SMAAggWorkflowTypeCancelMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemAction\SMAAggWorkflowTypeSubmitMenuItem">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowTypeSubmitMenuItem</Name>
+      <Link>Action Menu Items\SMAAggWorkflowTypeSubmitMenuItem</Link>
+    </Content>
+    <Content Include="AxMenuItemDisplay\SMAAggDMI">
+      <SubType>Content</SubType>
+      <Name>SMAAggDMI</Name>
+      <Link>Display Menu Items\SMAAggDMI</Link>
+    </Content>
+    <Content Include="AxQuery\SMAAggQuery">
+      <SubType>Content</SubType>
+      <Name>SMAAggQuery</Name>
+      <Link>Simple Queries\SMAAggQuery</Link>
+    </Content>
+    <Content Include="AxTableExtension\SMAAgreementTable.AggregateDEModel">
+      <SubType>Content</SubType>
+      <Name>SMAAgreementTable.AggregateDEModel</Name>
+      <Link>Table Extensions\SMAAgreementTable.AggregateDEModel</Link>
+    </Content>
+    <Content Include="AxWorkflowApproval\SMAAggWorkflowApproval">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowApproval</Name>
+      <Link>Workflow Approvals\SMAAggWorkflowApproval</Link>
+    </Content>
+    <Content Include="AxWorkflowCategory\SMAAggWorkflowCategory">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowCategory</Name>
+      <Link>Workflow Categories\SMAAggWorkflowCategory</Link>
+    </Content>
+    <Content Include="AxWorkflowTemplate\SMAAggWorkflowType">
+      <SubType>Content</SubType>
+      <Name>SMAAggWorkflowType</Name>
+      <Link>Workflow Types\SMAAggWorkflowType</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

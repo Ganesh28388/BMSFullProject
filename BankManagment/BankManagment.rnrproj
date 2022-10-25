@@ -14,8 +14,8 @@
     <ProjectGuid>{386a908d-d17d-4a39-bf47-ad48487dc7d9}</ProjectGuid>
     <Name>BankManagment</Name>
     <RootNamespace>BankManagment</RootNamespace>
-    <StartupObject>SysOpMIDemo</StartupObject>
-    <StartupType>MenuItemAction</StartupType>
+    <StartupObject>BMTaskDouble</StartupObject>
+    <StartupType>Form</StartupType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Configuration>Debug</Configuration>
@@ -89,20 +89,10 @@
       <Name>TstQueries</Name>
       <Link>Classes\TstQueries</Link>
     </Content>
-    <Content Include="AxEdt\BMAccountNum">
-      <SubType>Content</SubType>
-      <Name>BMAccountNum</Name>
-      <Link>ExtendedDataType\BMAccountNum</Link>
-    </Content>
     <Content Include="AxEdt\BMAccountTypes">
       <SubType>Content</SubType>
       <Name>BMAccountTypes</Name>
       <Link>ExtendedDataType\BMAccountTypes</Link>
-    </Content>
-    <Content Include="AxEdt\BMAddressFK">
-      <SubType>Content</SubType>
-      <Name>BMAddressFK</Name>
-      <Link>ExtendedDataType\BMAddressFK</Link>
     </Content>
     <Content Include="AxEdt\BMAmount">
       <SubType>Content</SubType>
@@ -113,11 +103,6 @@
       <SubType>Content</SubType>
       <Name>BMCardNum</Name>
       <Link>ExtendedDataType\BMCardNum</Link>
-    </Content>
-    <Content Include="AxEdt\BMCity">
-      <SubType>Content</SubType>
-      <Name>BMCity</Name>
-      <Link>ExtendedDataType\BMCity</Link>
     </Content>
     <Content Include="AxEdt\BMDate">
       <SubType>Content</SubType>
@@ -154,11 +139,6 @@
       <Name>BMMobile</Name>
       <Link>ExtendedDataType\BMMobile</Link>
     </Content>
-    <Content Include="AxEdt\BMName">
-      <SubType>Content</SubType>
-      <Name>BMName</Name>
-      <Link>ExtendedDataType\BMName</Link>
-    </Content>
     <Content Include="AxEdt\BMZipCode">
       <SubType>Content</SubType>
       <Name>BMZipCode</Name>
@@ -178,16 +158,6 @@
       <SubType>Content</SubType>
       <Name>ExpenseType</Name>
       <Link>EDT Enums\ExpenseType</Link>
-    </Content>
-    <Content Include="AxEdt\State">
-      <SubType>Content</SubType>
-      <Name>State</Name>
-      <Link>ExtendedDataType\State</Link>
-    </Content>
-    <Content Include="AxEdt\Street">
-      <SubType>Content</SubType>
-      <Name>Street</Name>
-      <Link>ExtendedDataType\Street</Link>
     </Content>
     <Content Include="AxEnum\BMAccountType">
       <SubType>Content</SubType>
