@@ -14,8 +14,8 @@
     <ProjectGuid>{386a908d-d17d-4a39-bf47-ad48487dc7d9}</ProjectGuid>
     <Name>BankManagment</Name>
     <RootNamespace>BankManagment</RootNamespace>
-    <StartupObject>BMTaskDouble</StartupObject>
-    <StartupType>Form</StartupType>
+    <StartupObject>ExtraChargeControllerOMI</StartupObject>
+    <StartupType>MenuItemOutput</StartupType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <Configuration>Debug</Configuration>
@@ -42,6 +42,8 @@
     <Folder Include="FormPatterns" />
     <Folder Include="Forms\" />
     <Folder Include="Label File" />
+    <Folder Include="Output Menu Items\" />
+    <Folder Include="Reports\" />
     <Folder Include="Simple Queries\" />
     <Folder Include="Tables" />
     <Folder Include="Workflow Approvals\" />
@@ -49,6 +51,31 @@
     <Folder Include="Workflow Types\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AxClass\BMCardExtraChargeCont">
+      <SubType>Content</SubType>
+      <Name>BMCardExtraChargeCont</Name>
+      <Link>Classes\BMCardExtraChargeCont</Link>
+    </Content>
+    <Content Include="AxClass\BMCardExtraChargeController">
+      <SubType>Content</SubType>
+      <Name>BMCardExtraChargeController</Name>
+      <Link>Classes\BMCardExtraChargeController</Link>
+    </Content>
+    <Content Include="AxClass\BMCardExtraChargeUIBuilder">
+      <SubType>Content</SubType>
+      <Name>BMCardExtraChargeUIBuilder</Name>
+      <Link>Classes\BMCardExtraChargeUIBuilder</Link>
+    </Content>
+    <Content Include="AxClass\BMCardTransExtraChargeContDp">
+      <SubType>Content</SubType>
+      <Name>BMCardTransExtraChargeContDp</Name>
+      <Link>Classes\BMCardTransExtraChargeContDp</Link>
+    </Content>
+    <Content Include="AxClass\BMCardTransExtraChargeDp">
+      <SubType>Content</SubType>
+      <Name>BMCardTransExtraChargeDp</Name>
+      <Link>Classes\BMCardTransExtraChargeDp</Link>
+    </Content>
     <Content Include="AxClass\BMEmpExpWorkflowApprovalEventHandler">
       <SubType>Content</SubType>
       <Name>BMEmpExpWorkflowApprovalEventHandler</Name>
@@ -289,6 +316,21 @@
       <Name>BMEmployeeExpense</Name>
       <Link>Display Menu Items\BMEmployeeExpense</Link>
     </Content>
+    <Content Include="AxMenuItemOutput\CardTransSimpleReport">
+      <SubType>Content</SubType>
+      <Name>CardTransSimpleReport</Name>
+      <Link>Output Menu Items\CardTransSimpleReport</Link>
+    </Content>
+    <Content Include="AxMenuItemOutput\ExtraChargeContOMI">
+      <SubType>Content</SubType>
+      <Name>ExtraChargeContOMI</Name>
+      <Link>Output Menu Items\ExtraChargeContOMI</Link>
+    </Content>
+    <Content Include="AxMenuItemOutput\ExtraChargeControllerOMI">
+      <SubType>Content</SubType>
+      <Name>ExtraChargeControllerOMI</Name>
+      <Link>Output Menu Items\ExtraChargeControllerOMI</Link>
+    </Content>
     <Content Include="AxQuery\BMEmployeeExpenseQry">
       <SubType>Content</SubType>
       <Name>BMEmployeeExpenseQry</Name>
@@ -298,6 +340,16 @@
       <SubType>Content</SubType>
       <Name>BMSavings</Name>
       <Link>Simple Queries\BMSavings</Link>
+    </Content>
+    <Content Include="AxReport\BMCardTransExtraChargeReport">
+      <SubType>Content</SubType>
+      <Name>BMCardTransExtraChargeReport</Name>
+      <Link>Reports\BMCardTransExtraChargeReport</Link>
+    </Content>
+    <Content Include="AxReport\BMExtraChargeContReport">
+      <SubType>Content</SubType>
+      <Name>BMExtraChargeContReport</Name>
+      <Link>Reports\BMExtraChargeContReport</Link>
     </Content>
     <Content Include="AxTable\BMAddress">
       <SubType>Content</SubType>
@@ -313,6 +365,16 @@
       <SubType>Content</SubType>
       <Name>BMCardAccount</Name>
       <Link>Tables\BMCardAccount</Link>
+    </Content>
+    <Content Include="AxTable\BMCardTransactions">
+      <SubType>Content</SubType>
+      <Name>BMCardTransactions</Name>
+      <Link>Tables\BMCardTransactions</Link>
+    </Content>
+    <Content Include="AxTable\BMCardTransExtraChargeTmp">
+      <SubType>Content</SubType>
+      <Name>BMCardTransExtraChargeTmp</Name>
+      <Link>Tables\BMCardTransExtraChargeTmp</Link>
     </Content>
     <Content Include="AxTable\BMCurrentAccount">
       <SubType>Content</SubType>
